@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Chat</title>
+    <link rel="stylesheet" type="text/css" href="client.css">
+</head>
+<body>
+    <h1>RChat - Made by Rick G.</h1>
+    <br>
+
+    <div id="chat-container">
+        <div id="online-users">
+            <h2>Online Users</h2>
+            <ul id="users">
+            </ul>
+        </div>
+        <br>
+        <div id="chat">
+            <h2>Chat</h2>
+            <div id="messages">
+            </div>
+        </div>
+    </div>
+    <br>
+    <form id="message-form">
+        <input type="text" id="message-input" placeholder="Type your message...">
+        <button type="submit">Send</button>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
